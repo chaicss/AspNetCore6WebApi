@@ -26,9 +26,9 @@ namespace AspNetCore6WebApi.DataAccess.Repositories.Implementations
             return customerdata;
         }
 
-        public string DeleteCustomer(int ID)
+        public string DeleteCustomer(int Id)
         {
-            var items = _DbCustomerContext.CustomerTable.Where(item => item.ID == ID);
+            var items = _DbCustomerContext.CustomerTable.Where(item => item.Id == Id);
             if (items.Any())
             {
                 _DbCustomerContext.Remove(items.First());
@@ -49,7 +49,7 @@ namespace AspNetCore6WebApi.DataAccess.Repositories.Implementations
 
         public Customer UpdateCustomer(Customer customerdata)
         {
-            var items = _DbCustomerContext.CustomerTable.Where(item => item.ID == customerdata.ID);
+            var items = _DbCustomerContext.CustomerTable.Where(item => item.Id == customerdata.Id);
             if (items.FirstOrDefault() == null)
             {
                 return null;

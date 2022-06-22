@@ -38,9 +38,9 @@ namespace AspNetCore6WebApi.Controllers
         }
 
         [HttpDelete]
-        public ObjectResult DeleteCustomer(int ID)
+        public ObjectResult DeleteCustomer(int Id)
         {
-            return Ok(_CustomerManager.DeleteCustomer(ID));
+            return Ok(_CustomerManager.DeleteCustomer(Id));
         }
     }
 }

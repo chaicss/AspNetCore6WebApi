@@ -12,6 +12,6 @@ namespace AspNetCore6WebApi.DataAccess.Repositories.Interfaces
         List<Customer> GetCustomer();
         Customer CreateCustomer(Customer customerdata);
         Customer UpdateCustomer(Customer customerdata);
-        string DeleteCustomer(int ID);
+        string DeleteCustomer(int Id);
     }
 }

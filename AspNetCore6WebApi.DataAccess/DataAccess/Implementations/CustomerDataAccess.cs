@@ -22,9 +22,9 @@ namespace AspNetCore6WebApi.DataAccess.DataAccess.Implementations
             return _CustomerRopository.CreateCustomer(customerdata);
         }
 
-        public string DeleteCustomer(int ID)
+        public string DeleteCustomer(int Id)
         {
-            return _CustomerRopository.DeleteCustomer(ID);
+            return _CustomerRopository.DeleteCustomer(Id);
         }
 
         public List<Customer> GetCustomer()

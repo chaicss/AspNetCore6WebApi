@@ -13,7 +13,7 @@ namespace AspNetCore6WebApi.Mappers
             }
             return new Customer
             {
-                ID = customerdata.ID,
+                Id = customerdata.Id,
                 FirstName = customerdata.FirstName,
                 LastName = customerdata.LastName,
                 Email = customerdata.Email,
@@ -32,7 +32,7 @@ namespace AspNetCore6WebApi.Mappers
 
             return new CustomerModel
             {
-                ID = customerdata.ID,
+                Id = customerdata.Id,
                 FirstName = customerdata.FirstName,
                 LastName = customerdata.LastName,
                 Email = customerdata.Email,

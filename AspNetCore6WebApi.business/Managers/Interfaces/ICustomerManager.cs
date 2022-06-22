@@ -12,6 +12,6 @@ namespace AspNetCore6WebApi.business.Managers.Interfaces
         List<Customer> GetCustomer();
         ResponseData CreateCustomer(Customer customerdata);
         ResponseData UpdateCustomer(Customer customerdata);
-        ResponseData DeleteCustomer(int ID);
+        ResponseData DeleteCustomer(int Id);
     }
 }
